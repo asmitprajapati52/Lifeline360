@@ -52,9 +52,15 @@ export const updateHospital = async (hospitalId, data) => {
    Update Emergency Request Status
 ================================ */
 export const updateRequestStatus = async (requestId, status) => {
+  if (!requestId || typeof requestId !== "string") {
+    console.error("❌ Invalid Firestore requestId:", requestId);
+    return;
+  }
+
   const ref = doc(db, "emergencies", requestId);
   await updateDoc(ref, { status });
 };
+
 
 /* ================================
    Create Emergency Request
