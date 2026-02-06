@@ -101,9 +101,9 @@ lifeline360/
 ```
 
 ## License
+This project is licensed under the MIT License © 2026 Asmit Prajapati
 
-MIT
 
 ## Author
 
-Created with ❤️ for saving lives
+Asmit Prajapati
